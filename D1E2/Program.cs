@@ -17,7 +17,7 @@ namespace D1E2
                 new Student()
                 {
                     ID = 2,
-                    Name = "Mustafiz",
+                    Name = "Mustafiz", 
                     Age = 23
                 },
                 new Student()

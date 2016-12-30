@@ -41,8 +41,35 @@ namespace D1E2
 
 
 
+            // ------------- Task Day 1-----------------------------------
 
+            TaskDayOne tdone= new TaskDayOne();
+            Console.WriteLine(Environment.NewLine + @"find all number in the array of numbers whice are gretter then 5 :" );
+            tdone.FindNumberGreaterThenFive();
+            Console.WriteLine(Environment.NewLine + @"find all number in the array of numbers whice are even Number :");
+            tdone.FindEvenNumbers();
+            Console.WriteLine(Environment.NewLine + @"find all number in the array of numbers whice are odd Number :");
+            tdone.FindOddNumbers();
+            Console.WriteLine(Environment.NewLine + @"find the top 1 number in the numbers array :");
+            tdone.FindTopOneNumber();
+            Console.WriteLine(Environment.NewLine + @"find the top 1 number in the numbers array which are gretter then 5:");
+            tdone.FindTopOneNumberGreaterThenFive();
+            Console.WriteLine(Environment.NewLine + @"find the count of number in the numbers array:");
+            tdone.FindCountNumbers();
+
+            Console.WriteLine(Environment.NewLine + @"Show only student name who's age are  gretter then 30:");
+            //tdone.FindCountNumbers();
+
+            Student std = new Student();
+            var ListStd = std.GetStudentList().Where(x => x.Age > 30);
+            foreach (var stud in ListStd)
+            {
+                Console.WriteLine("Name :"  + stud.Name + " "  + "Age : " + stud.Age);
+            }
         }
+
+
+
     }
 
 
